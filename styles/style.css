@@ -124,6 +124,7 @@ span {
 }
 
 img {
+    width: 50%;
     border-radius: 15px;
 }
 
@@ -139,5 +140,14 @@ img {
     
     .cabecalho > nav {
         gap: 40px;
+    }
+
+    .about {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .about section {
+        width: auto;
     }
 }
