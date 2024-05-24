@@ -145,6 +145,29 @@ img {
     flex-shrink: 0;
 }
 
+.projects {
+    font-family: var(--secondary-font);
+    font-size: 1.5rem;
+    padding: 5% 15%;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 82px;
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 auto;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.projects img {
+    width: 400px
+}
+
 
 @media (max-width: 1200px) {
     .cabecalho {
