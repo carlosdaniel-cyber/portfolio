@@ -17,6 +17,7 @@ body {
 }
 
 .cabecalho {
+    font-family: var(--primary-font);
     display: flex;
     justify-content: center;
     padding-top: 2rem;
@@ -34,7 +35,6 @@ body {
 .cabecalho a {
     text-decoration: none;
     color: var(--hover-color);
-    font-family: 'Lato', sans-serif;
     font-size: 1.5rem;
     font-weight: 700;
     padding: 0.5rem;
@@ -55,6 +55,76 @@ body {
 
 .cabecalho a:hover::after {
     transform: scaleX(1);
+}
+
+.about {
+    font-family: var(--secondary-font);
+    font-size: 1.5rem;
+    padding: 5% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px;
+}
+
+section {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+
+.title {
+    font-size: 2.25rem;
+    padding-bottom: 1.5rem;
+    font-family: var(--primary-font);
+}
+
+.about p {
+    font-size: 1.5rem;
+    line-height: 30px;
+}
+
+span {
+    color: var(--tertiary-color);
+}
+
+.social-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 2.5rem;
+    gap: 32px;
+}
+
+.social-links h2 {
+    font-weight: 600;
+}
+
+.social-links a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    border: 2px solid var(--tertiary-color);
+    width: 12rem;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 21.5px 0;
+    text-decoration: none;
+    color: var(--tertiary-color);
+}
+
+.social-links a:hover {
+    background-color: var(--secondary-color);
+}
+
+img {
+    border-radius: 15px;
 }
 
 
