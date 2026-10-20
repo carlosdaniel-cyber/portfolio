@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+    --primary-color: #22C1C3;
+    --secondary-color: #FDBC2D;
+    --text-color: #525252;
+    --font-family: 'Inter', sans-serif;
+}
+
+body {
+    background: #22C1C3;
+    background: linear-gradient(113deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
+    font-family: int;
+}
+
+
+img#profile {
+    height: 112px;
+    border-radius: 50%;
+    border: 3px solid #525252;
+}
