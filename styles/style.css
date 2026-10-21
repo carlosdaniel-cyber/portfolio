@@ -4,6 +4,20 @@
     /* --primary-color: #22C1C3;
     --secondary-color: #FDBC2D; */
     --font-family: 'Inter', sans-serif;
+
+    /* Text */
+    --text-color-light-mode: #000000;
+
+    /* Stroke */
+    --stroke-color-light-mode: #00000050;
+
+    /* Surface */
+    --surface-color-light-mode: #00000005;
+    --surface-color-light-mode-hover: #00000002;
+
+    /* Highlight */
+    --highlight-color-light-mode: #00000010;
+
 }
 
 body {
