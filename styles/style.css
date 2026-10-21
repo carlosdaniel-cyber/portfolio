@@ -31,3 +31,12 @@ img#profile {
     border-radius: 50%;
     border: 3px solid #525252;
 }
+
+footer.footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 50px;
+}
