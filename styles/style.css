@@ -43,7 +43,7 @@ h1#title {
 img#profile {
     height: 112px;
     border-radius: 50%;
-    border: 3px solid #525252;
+    border: 3px solid var(--stroke-color-light-mode);
 }
 
 div.buttons {
@@ -56,14 +56,19 @@ div.buttons {
 }
 
 button {
-    width: 200px;
-    height: 24px;
+    width: 540px;
+    height: 56px;
     border-radius: 8px;
-    border: none;
-    background-color: #00000010;
+    border: thin solid var(--stroke-color-light-mode);
+    background-color: var(--surface-color-light-mode);
     font-family: var(--font-family);
     font-size: 16px;
     cursor: pointer;
+}
+
+button:hover, button:active {
+    background-color: var(--surface-color-light-mode-hover);
+    border: thin solid var(--text-color-light-mode);
 }
 
 footer.footer {
@@ -76,6 +81,6 @@ footer.footer {
 }
 
 a:hover, a:active {
-    background-color: #00000010;
+    background-color: var(--surface-color-light-mode-hover);
     border-radius: 50%;
 }
