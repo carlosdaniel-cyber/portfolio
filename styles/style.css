@@ -40,3 +40,8 @@ footer.footer {
     gap: 16px;
     margin-top: 50px;
 }
+
+a:hover {
+    background-color: #00000010;
+    border-radius: 50%;
+}
