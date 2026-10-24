@@ -1,9 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 :root {
-    /* --primary-color: #22C1C3;
-    --secondary-color: #FDBC2D; */
-    --font-family: 'Inter', sans-serif;
+    --text-md: 16px/24px 'Inter', sans-serif;
+    --text-sm: medium 14px/24px 'Inter', sans-serif;
 
     /* Text */
     --text-color-light-mode: #000000;
@@ -26,7 +25,7 @@ body {
 }
 
 header.header {
-    font-family: var(--font-family);
+    font: var(--text-md);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -37,7 +36,6 @@ header.header {
 h1#title {
     text-align: center;
     margin-top: 20px;
-    line-height: 24px;
 }
 
 img#profile {
@@ -55,14 +53,49 @@ div.buttons {
     margin-top: 50px;
 }
 
+div#cards {
+    width: 392px;
+    height: 204px;
+    border-radius: 8px;
+    border: thin solid var(--stroke-color-light-mode);
+    background-color: var(--surface-color-light-mode);
+}
+
+span.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 16px;
+}
+
+div#cards span.card img {
+    width: 360px;
+    height: 140px;
+}
+
+div#cards span.card a {
+    font: var(--text-md);
+    text-align: center;
+}
+
+/* div.cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 50px;
+} */
+
 div#about {
-    font-family: var(--font-family);
+    font: var(--text-md);
     display: flex;
     justify-content: center;
     text-align: center;
 
     /* margin-top: 24px;
-    line-height: 24px;
     max-width: 800px; */
 }
 
@@ -72,8 +105,7 @@ button {
     border-radius: 8px;
     border: thin solid var(--stroke-color-light-mode);
     background-color: var(--surface-color-light-mode);
-    font-family: var(--font-family);
-    font-size: 16px;
+    font: var(--text-md);
     cursor: pointer;
 }
 
