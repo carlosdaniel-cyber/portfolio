@@ -2,7 +2,7 @@
 
 :root {
     --text-md: 16px/24px 'Inter', sans-serif;
-    --text-sm: medium 14px/24px 'Inter', sans-serif;
+    --text-sm: 14px/24px 'Inter', sans-serif;
 
     /* Text */
     --text-color-light-mode: #000000;
@@ -54,14 +54,18 @@ div.buttons {
 }
 
 div#cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 16px;
+}
+
+span.card {
     width: 392px;
     height: 204px;
     border-radius: 8px;
     border: thin solid var(--stroke-color-light-mode);
     background-color: var(--surface-color-light-mode);
-}
-
-span.card {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -76,18 +80,16 @@ div#cards span.card img {
 }
 
 div#cards span.card a {
-    font: var(--text-md);
-    text-align: center;
+    font: var(--text-sm);
+    /* display: flex;
+    justify-content: left; */
+    align-items: center;
 }
 
-/* div.cards {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 16px;
-    margin-top: 50px;
-} */
+div#cards span.card a:hover, div#cards span.card a:active {
+    font: var(--text-sm);
+    font-weight: 500;
+}
 
 div#about {
     font: var(--text-md);
